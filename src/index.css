@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-bg: #020711;
+  --color-card-bg: #0A1222;
+  --color-card-bg-alt: #0C1425;
+  --color-card-border: #1B3045;
+  --color-card-border-hover: #19D9FF;
+  --color-text-main: #F5F7FA;
+  --color-text-muted: #8C9BB0;
+  --color-cyan-glow: #19D9FF;
+  --color-cyan-light: #A9EDFF;
+  --color-neon-green: #8FEA22;
+  --color-neon-lime: #A2F126;
+  
+  --font-headline: 'Galindo', cursive, sans-serif;
+  --font-tech: 'JetBrains Mono', monospace;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Outfit', 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: #020711;
+    color: #F5F7FA;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headline);
+  }
+}
+
+/* Custom Grid Pattern Background */
+.bg-tech-grid {
+  background-size: 44px 44px;
+  background-image: 
+    linear-gradient(to right, rgba(27, 48, 69, 0.25) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(27, 48, 69, 0.25) 1px, transparent 1px);
+}
+
+/* Dense Dot Grid */
+.bg-dot-grid {
+  background-image: radial-gradient(rgba(25, 217, 255, 0.15) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Stylish Gradient Text Utilities */
+.text-cyan-green-gradient {
+  background: linear-gradient(135deg, #19D9FF 0%, #00E5C0 50%, #8FEA22 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-white-cyan-gradient {
+  background: linear-gradient(180deg, #FFFFFF 0%, #A9EDFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glowing Text Shadows */
+.glow-text-cyan {
+  text-shadow: 0 0 20px rgba(25, 217, 255, 0.5);
+}
+
+.glow-text-lime {
+  text-shadow: 0 0 20px rgba(143, 234, 34, 0.5);
+}
+
+/* Glowing Box Effect */
+.glow-box-cyan {
+  box-shadow: 0 0 30px -5px rgba(25, 217, 255, 0.25);
+}
+
+.glow-box-green {
+  box-shadow: 0 0 30px -5px rgba(143, 234, 34, 0.25);
+}
+
+/* Card Hover Shimmer Line */
+.card-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(25, 217, 255, 0.12),
+    transparent
+  );
+  transition: left 0.7s ease;
+}
+
+.card-shimmer:hover::before {
+  left: 150%;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020711;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1B3045;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #19D9FF;
+}
+
+/* Keyframe animations */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.04); }
+}
+
+.animate-pulse-slow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+@keyframes orbitRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-orbit-slow {
+  animation: orbitRotate 25s linear infinite;
+}
+
+.animate-orbit-reverse {
+  animation: orbitRotate 35s linear infinite reverse;
+}
