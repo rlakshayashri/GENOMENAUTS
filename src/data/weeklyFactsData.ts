@@ -4,7 +4,7 @@ export const WEEKLY_BIOTECH_FACTS: WeeklyBiotechFact[] = [
   {
     id: 'fact-week-39',
     weekNumber: 39,
-    weekLabel: 'WEEK 39 · FEATURED FACT',
+    weekLabel: 'FEATURED FACT',
     title: 'DNA Compactness & The Cosmic Distance Scale',
     category: 'MOLECULAR GENOMICS',
     summary: 'If uncoiled and stretched end-to-end, the DNA in a single human body would extend over 10 billion miles — enough to reach Pluto and back nearly 17 times!',
@@ -16,7 +16,7 @@ export const WEEKLY_BIOTECH_FACTS: WeeklyBiotechFact[] = [
   {
     id: 'fact-week-38',
     weekNumber: 38,
-    weekLabel: 'WEEK 38 ARCHIVE',
+    weekLabel: 'BIO-FACT ARCHIVE',
     title: 'Deinococcus radiodurans — The Radiation-Proof Genome',
     category: 'EXTREMOPHILE MICROBIOLOGY',
     summary: 'Deinococcus radiodurans can survive 1.5 million rads of gamma radiation — 3,000 times the lethal dose for humans — by piecing its shattered DNA back together in hours.',
@@ -28,7 +28,7 @@ export const WEEKLY_BIOTECH_FACTS: WeeklyBiotechFact[] = [
   {
     id: 'fact-week-37',
     weekNumber: 37,
-    weekLabel: 'WEEK 37 ARCHIVE',
+    weekLabel: 'BIO-FACT ARCHIVE',
     title: 'AI Protein Folding: Solving a 50-Year Biological Quest',
     category: 'AI PROTEIN DESIGN',
     summary: 'AlphaFold and ESMFold predicted over 200 million 3D protein structures in months — expanding known structural biology from 200,000 experimental PDB entries to virtually every known protein on Earth.',
@@ -40,7 +40,7 @@ export const WEEKLY_BIOTECH_FACTS: WeeklyBiotechFact[] = [
   {
     id: 'fact-week-36',
     weekNumber: 36,
-    weekLabel: 'WEEK 36 ARCHIVE',
+    weekLabel: 'BIO-FACT ARCHIVE',
     title: 'Tardigrades & Bioglass Anhydrobiosis',
     category: 'CRYPTOBIOSIS & PROTEIN PHYSICS',
     summary: 'Tardigrades (water bears) survive extreme desiccation, vacuum of space, and sub-zero temperatures by converting their cytoplasm into liquid bioglass.',
@@ -52,7 +52,7 @@ export const WEEKLY_BIOTECH_FACTS: WeeklyBiotechFact[] = [
   {
     id: 'fact-week-35',
     weekNumber: 35,
-    weekLabel: 'WEEK 35 ARCHIVE',
+    weekLabel: 'BIO-FACT ARCHIVE',
     title: 'Autoluminescent Plants — Fungal Luciferin Engineering',
     category: 'SYNTHETIC BIOLOGY & METABOLIC ENGINEERING',
     summary: 'By integrating the fungal bioluminescence gene pathway into plant genomes, bioengineers created self-sustaining glowing plants without external chemical additives.',

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { WEEKLY_BIOTECH_FACTS } from '../data/weeklyFactsData';
-import { Sparkles, Calendar, Zap, Share2, Check, ArrowRight, Dna, Atom } from 'lucide-react';
+import { Sparkles, Zap, Share2, Check, ArrowRight, Dna, Atom } from 'lucide-react';
 
 export const WeeklyFactSection: React.FC = () => {
   const [selectedFactId, setSelectedFactId] = useState<string>(WEEKLY_BIOTECH_FACTS[0].id);
@@ -10,7 +10,7 @@ export const WeeklyFactSection: React.FC = () => {
   const activeFact = WEEKLY_BIOTECH_FACTS.find((f) => f.id === selectedFactId) || WEEKLY_BIOTECH_FACTS[0];
 
   const handleCopyFact = () => {
-    const textToCopy = `🔬 GENOMENAUTS WEEKLY BIOTECHNOLOGY FACT (${activeFact.weekLabel}):\n\n"${activeFact.title}"\n\n${activeFact.summary}\n\nExplore more at GENOMENAUTS · SRMIST Ramapuram!`;
+    const textToCopy = `🔬 GENOMENAUTS BIOTECHNOLOGY FACT (${activeFact.title}):\n\n${activeFact.summary}\n\nExplore more at GENOMENAUTS · SRMIST Ramapuram!`;
     navigator.clipboard.writeText(textToCopy);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
@@ -34,12 +34,12 @@ export const WeeklyFactSection: React.FC = () => {
         >
           <Sparkles className="w-4 h-4 text-[#8FEA22] animate-pulse" />
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#19D9FF] font-semibold">
-            WEEKLY BIO-ORBIT · FACT OF THE WEEK
+            BIO-ORBIT · FACT OF THE WEEK
           </span>
           <span className="w-1.5 h-1.5 rounded-full bg-[#8FEA22] animate-ping" />
         </motion.div>
 
-        {/* HEADLINE & TIMER HEADER */}
+        {/* HEADLINE HEADER */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12">
           <div className="max-w-2xl">
             <h2 className="font-headline font-extrabold text-3xl sm:text-5xl lg:text-6xl leading-[1.2] tracking-normal text-[#F5F7FA] mb-4">
@@ -49,21 +49,6 @@ export const WeeklyFactSection: React.FC = () => {
             <p className="text-[#8C9BB0] text-base sm:text-lg leading-relaxed">
               Every week, GENOMENAUTS highlights a groundbreaking, mind-bending fact from genomics, extremophile biology, AI protein design, and synthetic biology.
             </p>
-          </div>
-
-          {/* NEXT WEEK COUNTDOWN BADGE */}
-          <div className="flex items-center gap-3 p-3.5 rounded-2xl bg-[#0A1222] border border-[#1B3045] shadow-lg shrink-0">
-            <div className="p-2.5 rounded-xl bg-[#0C1425] border border-[#19D9FF]/40 text-[#19D9FF]">
-              <Calendar className="w-5 h-5" />
-            </div>
-            <div>
-              <div className="font-mono text-[10px] uppercase tracking-widest text-[#8FEA22] font-extrabold">
-                NEXT FACT UNLOCKS IN
-              </div>
-              <div className="font-mono text-xs text-[#F5F7FA] font-bold tracking-wider">
-                5 DAYS · 14 HOURS · 22 MIN
-              </div>
-            </div>
           </div>
         </div>
 
