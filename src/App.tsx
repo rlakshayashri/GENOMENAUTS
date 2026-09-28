@@ -6,7 +6,6 @@ import { DepartmentSection } from './components/DepartmentSection';
 import { CommandDeck } from './components/CommandDeck';
 import { LeadershipSection } from './components/LeadershipSection';
 import { DomainPodsSection } from './components/DomainPodsSection';
-import { HypotheticalSection } from './components/HypotheticalSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { MemberModal } from './components/MemberModal';
@@ -62,9 +61,6 @@ export function App() {
 
         {/* SECTION 04: DOMAIN PODS */}
         <DomainPodsSection onSelectMember={(member) => setSelectedMember(member)} />
-
-        {/* SECTION 06: HYPOTHETICAL SITUATIONS */}
-        <HypotheticalSection />
 
         {/* SECTION 05: JOIN THE CLUB & BIOINFO DATA SUBMISSION */}
         <ContactSection />
