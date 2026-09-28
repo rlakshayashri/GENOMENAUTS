@@ -79,7 +79,7 @@ export const DepartmentSection: React.FC = () => {
               </p>
             </div>
 
-            {/* HOD'S MESSAGE FOR GENORBIT */}
+            {/* HOD'S MESSAGE FOR GENOMENAUTS */}
             <div className="p-6 rounded-2xl bg-[#0C1527] border border-[#19D9FF]/40 space-y-3.5 shadow-xl glow-box-cyan relative overflow-hidden">
               <div className="flex items-center justify-between border-b border-[#1B3045] pb-3">
                 <div className="flex items-center gap-3">
@@ -88,7 +88,7 @@ export const DepartmentSection: React.FC = () => {
                   </div>
                   <div>
                     <span className="font-mono text-xs uppercase tracking-[0.18em] text-[#19D9FF] font-extrabold block">
-                      HOD'S MESSAGE FOR GENORBIT
+                      HOD'S MESSAGE FOR GENOMENAUTS
                     </span>
                     <span className="text-[#F5F7FA] font-headline text-sm font-bold block">
                       Dr. Hemavathy · Head of Department

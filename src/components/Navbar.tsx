@@ -38,7 +38,7 @@ export const Navbar: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex items-center justify-between gap-4">
         
-        {/* LEFT: BRAND BADGES (SRM LOGO + GENOMENAUTS LOGO + GENORBIT TITLE) */}
+        {/* LEFT: BRAND BADGES (SRM LOGO + GENOMENAUTS LOGO + GENOMENAUTS TITLE) */}
         <a href="#about" onClick={(e) => handleNavClick(e, '#about')} className="flex items-center gap-2.5 sm:gap-3 group shrink-0">
           <div className="h-9 px-2 rounded-lg bg-white/95 border border-white/40 flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform duration-300">
             <img src="/srm_logo.png" alt="SRMIST Ramapuram Logo" className="h-6 w-auto object-contain" />
@@ -53,11 +53,11 @@ export const Navbar: React.FC = () => {
           <div className="flex flex-col">
             <div className="flex items-center gap-1.5">
               <span className="font-headline font-bold text-base sm:text-lg tracking-wider text-[#F5F7FA] group-hover:text-[#19D9FF] transition-colors leading-none">
-                GENORBIT
+                GENOMENAUTS
               </span>
             </div>
             <span className="font-mono text-[8.5px] uppercase tracking-[0.14em] text-[#8C9BB0] whitespace-nowrap mt-0.5">
-              GENOMENAUTS · SRMIST RAMAPURAM
+              COMPUTATIONAL BIOLOGY & BIOINFORMATICS · SRMIST
             </span>
           </div>
         </a>

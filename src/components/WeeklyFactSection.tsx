@@ -10,7 +10,7 @@ export const WeeklyFactSection: React.FC = () => {
   const activeFact = WEEKLY_BIOTECH_FACTS.find((f) => f.id === selectedFactId) || WEEKLY_BIOTECH_FACTS[0];
 
   const handleCopyFact = () => {
-    const textToCopy = `🔬 GENORBIT WEEKLY BIOTECHNOLOGY FACT (${activeFact.weekLabel}):\n\n"${activeFact.title}"\n\n${activeFact.summary}\n\nExplore more at GENORBIT · SRMIST Ramapuram!`;
+    const textToCopy = `🔬 GENOMENAUTS WEEKLY BIOTECHNOLOGY FACT (${activeFact.weekLabel}):\n\n"${activeFact.title}"\n\n${activeFact.summary}\n\nExplore more at GENOMENAUTS · SRMIST Ramapuram!`;
     navigator.clipboard.writeText(textToCopy);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
@@ -47,7 +47,7 @@ export const WeeklyFactSection: React.FC = () => {
               <span className="text-cyan-green-gradient glow-text-cyan">code of nature.</span>
             </h2>
             <p className="text-[#8C9BB0] text-base sm:text-lg leading-relaxed">
-              Every week, GENORBIT highlights a groundbreaking, mind-bending fact from genomics, extremophile biology, AI protein design, and synthetic biology.
+              Every week, GENOMENAUTS highlights a groundbreaking, mind-bending fact from genomics, extremophile biology, AI protein design, and synthetic biology.
             </p>
           </div>
 

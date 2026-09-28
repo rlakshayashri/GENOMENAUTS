@@ -60,7 +60,7 @@ export const HeroSection: React.FC = () => {
         >
           <Sparkles className="w-3.5 h-3.5 text-[#19D9FF] animate-spin" style={{ animationDuration: '8s' }} />
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#19D9FF] font-semibold">
-            01 / GENORBIT · STUDENT BIOTECHNOLOGY CLUB
+            01 / GENOMENAUTS · CONNECTING CSE & BIOLOGY
           </span>
           <span className="w-1.5 h-1.5 rounded-full bg-[#8FEA22] animate-ping" />
         </motion.div>
@@ -155,10 +155,10 @@ export const HeroSection: React.FC = () => {
                   <div className="space-y-2.5">
                     <div className="flex items-center gap-2 text-[#19D9FF] font-mono text-[11px] font-bold">
                       <Compass className="w-4 h-4 text-[#19D9FF]" />
-                      <span>STUDENT-DRIVEN BIOTECHNOLOGY CLUB</span>
+                      <span>COMPUTATIONAL BIOLOGY & BIOINFORMATICS CLUB</span>
                     </div>
                     <p className="text-[#8C9BB0] text-xs sm:text-sm leading-relaxed">
-                      GENORBIT is a student-driven biotechnology club at SRMIST Ramapuram providing a platform to explore biotechnology beyond the classroom through interactive events, competitions, workshops, and outreach activities.
+                      GENOMENAUTS is a student-driven computational biology and bioinformatics club at SRMIST Ramapuram that bridges Computer Science & Engineering (CSE) with Biological Sciences. We provide a platform to explore algorithms, genomics, AI protein design, and data science through hands-on projects, workshops, and interdisciplinary research.
                     </p>
                     <p className="text-[#F5F7FA] font-mono text-[11px] pt-1 text-cyan-green-gradient font-bold">
                       GOAL: Learn, explore, collaborate, and innovate beyond the curriculum.

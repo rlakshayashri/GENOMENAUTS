@@ -23,7 +23,7 @@ export const CommandDeck: React.FC = () => {
               <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0C1425] border border-[#1B3045] w-fit">
                 <Compass className="w-4 h-4 text-[#19D9FF] animate-spin" style={{ animationDuration: '10s' }} />
                 <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#19D9FF] font-semibold">
-                  GENORBIT / COMMAND DECK
+                  GENOMENAUTS / COMMAND DECK
                 </span>
               </div>
 
