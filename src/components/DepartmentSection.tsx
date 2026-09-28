@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowUpRight, ArrowRight, Activity, Globe, Zap, Users, BookOpen, Rocket, Dna, Target } from 'lucide-react';
+import { ArrowRight, Activity, Globe, Zap, Users, BookOpen, Rocket, Dna, Target } from 'lucide-react';
 
 export const DepartmentSection: React.FC = () => {
   const [pulseMode, setPulseMode] = useState<'METRICS' | 'SPECTRUM'>('METRICS');
@@ -121,10 +121,19 @@ export const DepartmentSection: React.FC = () => {
               </p>
             </div>
 
-            {/* KEY AREAS PILLS */}
-            <div className="space-y-3">
-              <div className="font-mono text-xs uppercase tracking-widest text-[#19D9FF] font-bold">
-                KEY CORE AREAS OF STUDY & RESEARCH
+            {/* KEY AREAS PILLS & FACULTY/CREW LINK */}
+            <div className="space-y-4 pt-2">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[#1B3045]/60 pb-3">
+                <div className="font-mono text-xs uppercase tracking-widest text-[#19D9FF] font-bold">
+                  KEY CORE AREAS OF STUDY & RESEARCH
+                </div>
+                <a
+                  href="#team"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-[#19D9FF]/40 bg-[#0C1425] text-[#19D9FF] hover:bg-[#19D9FF]/10 hover:border-[#19D9FF] font-mono text-[11px] uppercase tracking-[0.15em] font-semibold transition-all cursor-pointer w-fit shrink-0 shadow-sm"
+                >
+                  <span>MEET THE FACULTY & CREW</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </a>
               </div>
               <div className="flex flex-wrap gap-2">
                 {keyAreas.map((area, i) => (
@@ -136,25 +145,6 @@ export const DepartmentSection: React.FC = () => {
                   </span>
                 ))}
               </div>
-            </div>
-
-            {/* DEPARTMENT FOCUSED BUTTONS */}
-            <div className="flex flex-wrap items-center gap-4 pt-4">
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 px-6 py-4 rounded-xl bg-[#19D9FF] text-[#020711] font-mono text-xs uppercase tracking-[0.18em] font-extrabold hover:bg-[#A9EDFF] transition-all shadow-[0_0_25px_rgba(25,217,255,0.4)] hover:scale-[1.02] active:scale-95 cursor-pointer"
-              >
-                <span>EXPLORE DEPARTMENT OPPORTUNITIES</span>
-                <ArrowUpRight className="w-4 h-4" />
-              </a>
-
-              <a
-                href="#team"
-                className="inline-flex items-center gap-2 px-6 py-4 rounded-xl border border-[#1B3045] bg-[#0A1222]/80 text-[#F5F7FA] hover:text-[#19D9FF] hover:border-[#19D9FF]/60 font-mono text-xs uppercase tracking-[0.18em] transition-all hover:bg-[#0A1222] cursor-pointer"
-              >
-                <span>MEET THE FACULTY & CREW</span>
-                <ArrowRight className="w-4 h-4" />
-              </a>
             </div>
 
           </motion.div>
