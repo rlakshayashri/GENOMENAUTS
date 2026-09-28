@@ -60,7 +60,7 @@ export const HeroSection: React.FC = () => {
         >
           <Sparkles className="w-3.5 h-3.5 text-[#19D9FF] animate-spin" style={{ animationDuration: '8s' }} />
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#19D9FF] font-semibold">
-            01 / GENOMENAUTS · COMPUTATIONAL BIOLOGY & BIOINFORMATICS CLUB
+            01 / GENORBIT · ONLINE PORTAL FOR GENOMENAUTS
           </span>
           <span className="w-1.5 h-1.5 rounded-full bg-[#8FEA22] animate-ping" />
         </motion.div>
@@ -98,7 +98,7 @@ export const HeroSection: React.FC = () => {
               <div className="space-y-3">
                 <div className="flex items-center justify-between border-b border-[#1B3045] pb-2.5">
                   <span className="font-mono text-[11px] uppercase tracking-[0.18em] font-bold text-[#19D9FF]">
-                    CLUB COMMAND PORTAL
+                    GENORBIT COMMAND PORTAL
                   </span>
                   <span className="font-mono text-[9px] text-[#8FEA22] uppercase tracking-wider px-2 py-0.5 rounded bg-[#8FEA22]/10 border border-[#8FEA22]/30 font-bold">
                     SRMIST RAMAPURAM

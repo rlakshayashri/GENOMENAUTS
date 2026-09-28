@@ -54,8 +54,8 @@ export const Navbar: React.FC = () => {
             <span className="font-headline font-bold text-base sm:text-lg tracking-wider text-[#F5F7FA] group-hover:text-[#19D9FF] transition-colors leading-none">
               GENOMENAUTS
             </span>
-            <span className="font-mono text-[9px] uppercase tracking-[0.14em] text-[#8C9BB0] whitespace-nowrap mt-1 leading-none">
-              SRMIST RAMAPURAM
+            <span className="font-mono text-[8.5px] uppercase tracking-[0.14em] text-[#8C9BB0] whitespace-nowrap mt-1 leading-none">
+              GENORBIT PLATFORM · SRMIST RAMAPURAM
             </span>
           </div>
         </a>

@@ -34,7 +34,7 @@ export const Footer: React.FC = () => {
                 GENOMENAUTS
               </div>
               <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#8C9BB0] whitespace-nowrap">
-                COMPUTATIONAL BIOLOGY & BIOINFORMATICS · SRMIST RAMAPURAM
+                GENORBIT WEB PLATFORM · SRMIST RAMAPURAM
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@ export const Footer: React.FC = () => {
         {/* BOTTOM ROW: COPYRIGHT & SYSTEM STATUS */}
         <div className="flex flex-col sm:flex-row items-center justify-between font-mono text-xs text-[#8C9BB0] gap-4">
           <div>
-            © 2026 GENOMENAUTS · COMPUTATIONAL BIOLOGY & BIOINFORMATICS CLUB · SRMIST RAMAPURAM
+            © 2026 GENORBIT · GENOMENAUTS BIOTECHNOLOGY CLUB · SRMIST RAMAPURAM
           </div>
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-[#8FEA22] animate-pulse" />

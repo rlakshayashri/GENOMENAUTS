@@ -88,7 +88,7 @@ export const DepartmentSection: React.FC = () => {
                   </div>
                   <div>
                     <span className="font-mono text-xs uppercase tracking-[0.18em] text-[#19D9FF] font-extrabold block">
-                      HOD'S MESSAGE FOR GENOMENAUTS
+                      HOD'S MESSAGE FOR GENORBIT
                     </span>
                     <span className="text-[#F5F7FA] font-headline text-sm font-bold block">
                       Dr. Hemavathy · Head of Department
