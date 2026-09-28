@@ -79,6 +79,37 @@ export const DepartmentSection: React.FC = () => {
               </p>
             </div>
 
+            {/* HOD'S MESSAGE FOR GENORBIT */}
+            <div className="p-6 rounded-2xl bg-[#0C1527] border border-[#19D9FF]/40 space-y-3.5 shadow-xl glow-box-cyan relative overflow-hidden">
+              <div className="flex items-center justify-between border-b border-[#1B3045] pb-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full border border-[#19D9FF] bg-[#0A1222] flex items-center justify-center font-headline font-bold text-sm text-[#19D9FF] overflow-hidden shrink-0">
+                    <img src="/hemavathy.png" alt="Dr. Hemavathy" className="w-full h-full object-cover rounded-full" />
+                  </div>
+                  <div>
+                    <span className="font-mono text-xs uppercase tracking-[0.18em] text-[#19D9FF] font-extrabold block">
+                      HOD'S MESSAGE FOR GENORBIT
+                    </span>
+                    <span className="text-[#F5F7FA] font-headline text-sm font-bold block">
+                      Dr. Hemavathy · Head of Department
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-3 text-[#8C9BB0] text-xs sm:text-sm leading-relaxed italic">
+                <p>
+                  "In the era of exponential biological data, the synergy between biology, computer science, and statistics has become indispensable. This database is curated as a centralized, accessible resource for our students, researchers, and faculty to explore genomic, proteomic, and structural data with ease."
+                </p>
+                <p>
+                  "The field is witnessing transformative advancements. From AI-driven drug discovery and AlphaFold-based protein structure prediction to single-cell multi-omics, metagenomics, and precision medicine, computational biology is redefining healthcare and biotechnology. Our focus is to equip students with skills aligned to these trending frontiers."
+                </p>
+                <p>
+                  "I encourage you to utilize this platform for learning, research, and innovation, and to contribute towards building robust computational solutions for real-world biological challenges."
+                </p>
+              </div>
+            </div>
+
             {/* DEPARTMENT VISION STATEMENT */}
             <div className="p-5 rounded-xl bg-[#0C1425] border border-[#1B3045] space-y-2">
               <div className="flex items-center gap-2 text-[#8FEA22] font-mono text-xs font-bold">
