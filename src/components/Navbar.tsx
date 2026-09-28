@@ -38,15 +38,15 @@ export const Navbar: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex items-center justify-between gap-4">
         
-        {/* LEFT: BRAND BADGES (SRM LOGO + GENOMENAUTS LOGO + TITLE) */}
+        {/* LEFT: BRAND BADGES (SRM LOGO + GENOMENAUTS LOGO + BRAND TITLE) */}
         <a href="#about" onClick={(e) => handleNavClick(e, '#about')} className="flex items-center gap-2.5 sm:gap-3 group shrink-0">
-          <div className="h-8.5 px-2 rounded-lg bg-white/95 border border-white/40 flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform duration-300">
-            <img src="/srm_logo.png" alt="SRMIST Ramapuram Logo" className="h-5.5 w-auto object-contain" />
+          <div className="h-9 px-2.5 rounded-lg bg-white/95 border border-white/40 flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform duration-300">
+            <img src="/srm_logo.png" alt="SRMIST Ramapuram Logo" className="h-6 w-auto object-contain" />
           </div>
 
-          <div className="w-[1px] h-5 bg-[#1B3045] hidden sm:block" />
+          <div className="w-[1px] h-6 bg-[#1B3045] hidden sm:block" />
 
-          <div className="w-8.5 h-8.5 rounded-full border border-[#19D9FF]/70 bg-[#0A1222] flex items-center justify-center shadow-[0_0_12px_rgba(25,217,255,0.3)] group-hover:border-[#19D9FF] group-hover:shadow-[0_0_18px_rgba(25,217,255,0.5)] transition-all overflow-hidden p-0.5 shrink-0">
+          <div className="w-9 h-9 rounded-full border border-[#19D9FF]/70 bg-[#0A1222] flex items-center justify-center shadow-[0_0_12px_rgba(25,217,255,0.3)] group-hover:border-[#19D9FF] group-hover:shadow-[0_0_18px_rgba(25,217,255,0.5)] transition-all overflow-hidden p-0.5 shrink-0">
             <img src="/logo.png" alt="GENOMENAUTS Logo" className="w-full h-full object-contain rounded-full group-hover:scale-105 transition-transform duration-300" />
           </div>
 
@@ -54,14 +54,14 @@ export const Navbar: React.FC = () => {
             <span className="font-headline font-bold text-base sm:text-lg tracking-wider text-[#F5F7FA] group-hover:text-[#19D9FF] transition-colors leading-none">
               GENOMENAUTS
             </span>
-            <span className="font-mono text-[8.5px] uppercase tracking-[0.14em] text-[#8C9BB0] whitespace-nowrap mt-1 leading-none">
-              GENORBIT PLATFORM · SRMIST RAMAPURAM
+            <span className="font-mono text-[9px] uppercase tracking-[0.14em] text-[#8C9BB0] whitespace-nowrap mt-1 leading-none">
+              GENORBIT · SRMIST RAMAPURAM
             </span>
           </div>
         </a>
 
         {/* CENTER: DESKTOP NAV LINKS */}
-        <nav className="hidden lg:flex items-center gap-5 xl:gap-8 shrink-0">
+        <nav className="hidden lg:flex items-center gap-5 xl:gap-7 shrink-0">
           {navLinks.map((link) => (
             <a
               key={link.name}
