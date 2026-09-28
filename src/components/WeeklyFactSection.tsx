@@ -68,10 +68,10 @@ export const WeeklyFactSection: React.FC = () => {
         </div>
 
         {/* TWO-COLUMN LAYOUT: FEATURED FACT DEEP-DIVE vs ARCHIVE SELECTOR */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           
           {/* LEFT: FEATURED ACTIVE FACT DISPLAY CARD (7 COLS) */}
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 flex flex-col">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeFact.id}
@@ -79,66 +79,68 @@ export const WeeklyFactSection: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.4 }}
-                className="p-7 sm:p-9 rounded-3xl bg-[#0A1222] border-2 border-[#19D9FF]/40 hover:border-[#8FEA22] transition-all duration-300 shadow-[0_0_35px_rgba(25,217,255,0.15)] relative overflow-hidden card-shimmer glow-box-cyan"
+                className="p-6 sm:p-8 rounded-3xl bg-[#0A1222] border-2 border-[#19D9FF]/40 hover:border-[#8FEA22] transition-all duration-300 shadow-[0_0_35px_rgba(25,217,255,0.15)] relative overflow-hidden card-shimmer glow-box-cyan flex-1 flex flex-col justify-between"
               >
-                {/* CARD HEADER: WEEK BADGE & CATEGORY */}
-                <div className="flex flex-wrap items-center justify-between gap-3 pb-5 mb-6 border-b border-[#1B3045]">
-                  <div className="flex items-center gap-2">
-                    <span className="px-3 py-1 rounded-full text-[10px] font-mono uppercase tracking-widest font-extrabold bg-[#8FEA22]/15 text-[#8FEA22] border border-[#8FEA22]/40">
-                      {activeFact.weekLabel}
-                    </span>
-                    {activeFact.isCurrentWeek && (
-                      <span className="font-mono text-[10px] text-[#19D9FF] bg-[#19D9FF]/10 px-2.5 py-0.5 rounded-full border border-[#19D9FF]/30 font-bold">
-                        LIVE NOW
+                <div>
+                  {/* CARD HEADER: WEEK BADGE & CATEGORY */}
+                  <div className="flex flex-wrap items-center justify-between gap-3 pb-4 mb-5 border-b border-[#1B3045]">
+                    <div className="flex items-center gap-2">
+                      <span className="px-3 py-1 rounded-full text-[10px] font-mono uppercase tracking-widest font-extrabold bg-[#8FEA22]/15 text-[#8FEA22] border border-[#8FEA22]/40">
+                        {activeFact.weekLabel}
                       </span>
-                    )}
-                  </div>
+                      {activeFact.isCurrentWeek && (
+                        <span className="font-mono text-[10px] text-[#19D9FF] bg-[#19D9FF]/10 px-2.5 py-0.5 rounded-full border border-[#19D9FF]/30 font-bold">
+                          LIVE NOW
+                        </span>
+                      )}
+                    </div>
 
-                  <span className="font-mono text-xs uppercase tracking-[0.18em] font-bold text-[#19D9FF]">
-                    #{activeFact.category}
-                  </span>
-                </div>
-
-                {/* FACT TITLE */}
-                <h3 className="font-headline font-extrabold text-2xl sm:text-3xl text-[#F5F7FA] mb-5 leading-snug">
-                  {activeFact.title}
-                </h3>
-
-                {/* FACT SUMMARY HIGHLIGHT BOX */}
-                <div className="p-5 rounded-2xl bg-[#0C1425] border border-[#19D9FF]/30 mb-6 relative">
-                  <div className="flex items-start gap-3">
-                    <Zap className="w-5 h-5 text-[#8FEA22] shrink-0 mt-0.5 animate-pulse" />
-                    <p className="text-[#F5F7FA] text-base leading-relaxed font-sans font-semibold">
-                      "{activeFact.summary}"
-                    </p>
-                  </div>
-                </div>
-
-                {/* SCIENTIFIC INSIGHT & TAKEAWAY */}
-                <div className="space-y-4 mb-7">
-                  <div>
-                    <span className="font-mono text-xs uppercase tracking-widest text-[#19D9FF] font-extrabold block mb-1.5 flex items-center gap-1.5">
-                      <Atom className="w-4 h-4 text-[#19D9FF]" />
-                      <span>THE SCIENTIFIC MECHANISM</span>
+                    <span className="font-mono text-xs uppercase tracking-[0.18em] font-bold text-[#19D9FF]">
+                      #{activeFact.category}
                     </span>
-                    <p className="text-[#8C9BB0] text-sm sm:text-base leading-relaxed">
-                      {activeFact.scientificInsight}
-                    </p>
                   </div>
 
-                  <div className="p-4 rounded-xl bg-[#020711]/80 border border-[#1B3045]">
-                    <span className="font-mono text-[11px] uppercase tracking-widest text-[#8FEA22] font-bold block mb-1">
-                      WHY IT MATTERS
-                    </span>
-                    <p className="text-[#F5F7FA] font-headline text-sm font-bold">
-                      {activeFact.takeaway}
-                    </p>
+                  {/* FACT TITLE */}
+                  <h3 className="font-headline font-extrabold text-2xl sm:text-3xl text-[#F5F7FA] mb-4 leading-snug">
+                    {activeFact.title}
+                  </h3>
+
+                  {/* FACT SUMMARY HIGHLIGHT BOX */}
+                  <div className="p-4 rounded-2xl bg-[#0C1425] border border-[#19D9FF]/30 mb-5 relative">
+                    <div className="flex items-start gap-3">
+                      <Zap className="w-5 h-5 text-[#8FEA22] shrink-0 mt-0.5 animate-pulse" />
+                      <p className="text-[#F5F7FA] text-sm sm:text-base leading-relaxed font-sans font-semibold">
+                        "{activeFact.summary}"
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* SCIENTIFIC INSIGHT & TAKEAWAY */}
+                  <div className="space-y-4 mb-6">
+                    <div>
+                      <span className="font-mono text-xs uppercase tracking-widest text-[#19D9FF] font-extrabold block mb-1.5 flex items-center gap-1.5">
+                        <Atom className="w-4 h-4 text-[#19D9FF]" />
+                        <span>THE SCIENTIFIC MECHANISM</span>
+                      </span>
+                      <p className="text-[#8C9BB0] text-xs sm:text-sm leading-relaxed">
+                        {activeFact.scientificInsight}
+                      </p>
+                    </div>
+
+                    <div className="p-4 rounded-xl bg-[#020711]/80 border border-[#1B3045]">
+                      <span className="font-mono text-[11px] uppercase tracking-widest text-[#8FEA22] font-bold block mb-1">
+                        WHY IT MATTERS
+                      </span>
+                      <p className="text-[#F5F7FA] font-headline text-xs sm:text-sm font-bold">
+                        {activeFact.takeaway}
+                      </p>
+                    </div>
                   </div>
                 </div>
 
                 {/* FOOTER TAGS & SHARE SIGNAL BUTTON */}
-                <div className="pt-5 border-t border-[#1B3045] flex flex-wrap items-center justify-between gap-4">
-                  <div className="flex flex-wrap gap-2">
+                <div className="pt-4 border-t border-[#1B3045] flex flex-wrap items-center justify-between gap-4 mt-auto">
+                  <div className="flex flex-wrap gap-1.5">
                     {activeFact.tags.map((tag, idx) => (
                       <span
                         key={idx}
@@ -172,61 +174,66 @@ export const WeeklyFactSection: React.FC = () => {
           </div>
 
           {/* RIGHT: FACT ARCHIVE & SELECTOR LIST (5 COLS) */}
-          <div className="lg:col-span-5 space-y-4">
-            <div className="flex items-center justify-between mb-2">
-              <div className="font-mono text-xs text-[#8C9BB0] uppercase tracking-widest flex items-center gap-2">
+          <div className="lg:col-span-5 flex flex-col h-full justify-between">
+            <div className="flex items-center justify-between mb-3 pb-1 border-b border-[#1B3045]/60">
+              <div className="font-mono text-xs text-[#19D9FF] uppercase tracking-widest flex items-center gap-2 font-bold">
                 <Dna className="w-4 h-4 text-[#19D9FF]" />
                 <span>WEEKLY ARCHIVE VAULT ({WEEKLY_BIOTECH_FACTS.length})</span>
               </div>
+              <span className="font-mono text-[10px] text-[#8FEA22] uppercase tracking-wider font-bold">
+                SELECT TO EXPAND
+              </span>
             </div>
 
-            {WEEKLY_BIOTECH_FACTS.map((fact) => {
-              const isSelected = fact.id === activeFact.id;
+            <div className="space-y-3 overflow-y-auto max-h-[580px] pr-1.5">
+              {WEEKLY_BIOTECH_FACTS.map((fact) => {
+                const isSelected = fact.id === activeFact.id;
 
-              return (
-                <motion.div
-                  key={fact.id}
-                  onClick={() => setSelectedFactId(fact.id)}
-                  whileHover={{ x: 4 }}
-                  className={`p-5 rounded-2xl border transition-all duration-300 cursor-pointer flex flex-col justify-between ${
-                    isSelected
-                      ? 'bg-[#0A1222] border-[#8FEA22] shadow-[0_0_20px_rgba(143,234,34,0.2)]'
-                      : 'bg-[#0A1222]/70 border-[#1B3045] hover:border-[#19D9FF]/50'
-                  }`}
-                >
-                  <div className="flex items-start justify-between gap-3 mb-2">
-                    <span
-                      className={`px-2.5 py-0.5 rounded text-[9px] font-mono uppercase tracking-wider font-bold border ${
-                        fact.isCurrentWeek
-                          ? 'bg-[#8FEA22]/20 text-[#8FEA22] border-[#8FEA22]/40'
-                          : 'bg-[#0C1425] text-[#8C9BB0] border-[#1B3045]'
-                      }`}
-                    >
-                      {fact.weekLabel}
-                    </span>
+                return (
+                  <motion.div
+                    key={fact.id}
+                    onClick={() => setSelectedFactId(fact.id)}
+                    whileHover={{ x: 4 }}
+                    className={`p-4 rounded-2xl border transition-all duration-300 cursor-pointer flex flex-col justify-between ${
+                      isSelected
+                        ? 'bg-[#0A1222] border-[#8FEA22] shadow-[0_0_20px_rgba(143,234,34,0.2)]'
+                        : 'bg-[#0A1222]/70 border-[#1B3045] hover:border-[#19D9FF]/50'
+                    }`}
+                  >
+                    <div className="flex items-start justify-between gap-3 mb-1.5">
+                      <span
+                        className={`px-2.5 py-0.5 rounded text-[9px] font-mono uppercase tracking-wider font-bold border ${
+                          fact.isCurrentWeek
+                            ? 'bg-[#8FEA22]/20 text-[#8FEA22] border-[#8FEA22]/40'
+                            : 'bg-[#0C1425] text-[#8C9BB0] border-[#1B3045]'
+                        }`}
+                      >
+                        {fact.weekLabel}
+                      </span>
 
-                    <span className="font-mono text-[10px] text-[#19D9FF] font-semibold">
-                      #{fact.category}
-                    </span>
-                  </div>
+                      <span className="font-mono text-[10px] text-[#19D9FF] font-semibold">
+                        #{fact.category}
+                      </span>
+                    </div>
 
-                  <h4 className="font-headline font-bold text-base text-[#F5F7FA] mb-1">
-                    {fact.title}
-                  </h4>
+                    <h4 className="font-headline font-bold text-sm text-[#F5F7FA] mb-1 leading-snug">
+                      {fact.title}
+                    </h4>
 
-                  <p className="text-[#8C9BB0] text-xs leading-relaxed line-clamp-2 italic mb-3">
-                    "{fact.summary}"
-                  </p>
+                    <p className="text-[#8C9BB0] text-xs leading-relaxed line-clamp-2 italic mb-2">
+                      "{fact.summary}"
+                    </p>
 
-                  <div className="flex items-center justify-between pt-2 border-t border-[#1B3045]/60 text-[10px] font-mono uppercase tracking-wider">
-                    <span className={isSelected ? 'text-[#8FEA22] font-bold' : 'text-[#8C9BB0]'}>
-                      {isSelected ? 'ACTIVE VIEWING' : 'VIEW INSIGHT'}
-                    </span>
-                    <ArrowRight className={`w-3.5 h-3.5 transition-transform ${isSelected ? 'text-[#8FEA22] translate-x-1' : 'text-[#8C9BB0]'}`} />
-                  </div>
-                </motion.div>
-              );
-            })}
+                    <div className="flex items-center justify-between pt-2 border-t border-[#1B3045]/60 text-[10px] font-mono uppercase tracking-wider">
+                      <span className={isSelected ? 'text-[#8FEA22] font-bold' : 'text-[#8C9BB0]'}>
+                        {isSelected ? 'ACTIVE VIEWING' : 'VIEW INSIGHT'}
+                      </span>
+                      <ArrowRight className={`w-3.5 h-3.5 transition-transform ${isSelected ? 'text-[#8FEA22] translate-x-1' : 'text-[#8C9BB0]'}`} />
+                    </div>
+                  </motion.div>
+                );
+              })}
+            </div>
           </div>
 
         </div>
