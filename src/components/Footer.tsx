@@ -64,6 +64,9 @@ export const Footer: React.FC = () => {
             <a href="#team" onClick={(e) => handleNavClick(e, '#team')} className="hover:text-[#19D9FF] transition-colors whitespace-nowrap">
               Meet the Team
             </a>
+            <a href="#weekly-fact" onClick={(e) => handleNavClick(e, '#weekly-fact')} className="hover:text-[#19D9FF] transition-colors whitespace-nowrap">
+              Weekly Fact
+            </a>
             <a href="#contact" onClick={(e) => handleNavClick(e, '#contact')} className="hover:text-[#19D9FF] transition-colors whitespace-nowrap">
               Contact & Data
             </a>

@@ -52,3 +52,16 @@ export interface HypotheticalScenario {
   votes: number;
   tags: string[];
 }
+
+export interface WeeklyBiotechFact {
+  id: string;
+  weekNumber: number;
+  weekLabel: string;
+  title: string;
+  category: string;
+  summary: string;
+  scientificInsight: string;
+  takeaway: string;
+  tags: string[];
+  isCurrentWeek?: boolean;
+}
