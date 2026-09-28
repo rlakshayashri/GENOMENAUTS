@@ -50,26 +50,26 @@ export const Navbar: React.FC = () => {
             <img src="/logo.png" alt="GENOMENAUTS Logo" className="w-full h-full object-contain rounded-full group-hover:scale-105 transition-transform duration-300" />
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col justify-center">
             <div className="flex items-center gap-1.5">
               <span className="font-headline font-bold text-base sm:text-lg tracking-wider text-[#F5F7FA] group-hover:text-[#19D9FF] transition-colors leading-none">
                 GENOMENAUTS
               </span>
             </div>
-            <span className="font-mono text-[8.5px] uppercase tracking-[0.14em] text-[#8C9BB0] whitespace-nowrap mt-0.5">
+            <span className="font-mono text-[8.5px] uppercase tracking-[0.14em] text-[#8C9BB0] whitespace-nowrap mt-1 leading-none">
               COMPUTATIONAL BIOLOGY & BIOINFORMATICS · SRMIST
             </span>
           </div>
         </a>
 
         {/* CENTER: DESKTOP NAV LINKS */}
-        <nav className="hidden lg:flex items-center gap-4 xl:gap-6 shrink-0">
+        <nav className="hidden lg:flex items-center gap-5 xl:gap-7 shrink-0 mx-auto">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="font-mono text-[10.5px] xl:text-[11px] uppercase tracking-[0.14em] text-[#8C9BB0] hover:text-[#19D9FF] transition-colors relative py-1 whitespace-nowrap after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#19D9FF] hover:after:w-full after:transition-all after:duration-300"
+              className="font-mono text-[11px] xl:text-[11.5px] uppercase tracking-[0.14em] text-[#8C9BB0] hover:text-[#19D9FF] transition-colors relative py-1 whitespace-nowrap after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#19D9FF] hover:after:w-full after:transition-all after:duration-300"
             >
               {link.name}
             </a>
@@ -78,10 +78,10 @@ export const Navbar: React.FC = () => {
 
         {/* RIGHT: RECRUITMENT STATUS & CTA BUTTON */}
         <div className="hidden md:flex items-center gap-3 shrink-0">
-          <div className="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#0A1222] border border-[#1B3045] whitespace-nowrap">
+          <div className="hidden xl:flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0A1222] border border-[#1B3045] whitespace-nowrap relative">
             <span className="w-2 h-2 rounded-full bg-[#8FEA22] animate-ping" />
-            <span className="w-2 h-2 rounded-full bg-[#8FEA22] absolute" />
-            <span className="font-mono text-[9.5px] uppercase tracking-[0.14em] text-[#F5F7FA] pl-2 whitespace-nowrap">
+            <span className="w-2 h-2 rounded-full bg-[#8FEA22] absolute left-3.5" />
+            <span className="font-mono text-[9.5px] uppercase tracking-[0.14em] text-[#F5F7FA] pl-3 whitespace-nowrap font-semibold">
               2026 RECRUITMENT ACTIVE
             </span>
           </div>
