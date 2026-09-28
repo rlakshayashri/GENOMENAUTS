@@ -50,11 +50,16 @@ export const DepartmentSection: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="lg:col-span-7 space-y-8"
           >
-            {/* SECTION LABEL */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0A1222] border border-[#1B3045] glow-box-cyan">
-              <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#19D9FF] font-semibold">
-                DEPARTMENT OF BIOTECHNOLOGY · SRMIST RAMAPURAM
-              </span>
+            {/* SECTION LABEL & INSTITUTION LOGO */}
+            <div className="flex flex-wrap items-center gap-3">
+              <div className="px-3 py-1.5 rounded-xl bg-white/95 border border-white/40 inline-flex items-center shadow-md">
+                <img src="/srm_logo.png" alt="SRMIST Ramapuram" className="h-7 w-auto object-contain" />
+              </div>
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0A1222] border border-[#1B3045] glow-box-cyan">
+                <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#19D9FF] font-semibold">
+                  DEPARTMENT OF BIOTECHNOLOGY · SRMIST RAMAPURAM
+                </span>
+              </div>
             </div>
 
             {/* HEADLINE */}

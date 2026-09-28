@@ -17,8 +17,12 @@ export const Footer: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 pb-12 border-b border-[#1B3045]/60">
           
           {/* LEFT: BRANDING */}
-          <div className="flex items-center gap-4 shrink-0">
-            <div className="w-12 h-12 rounded-full border border-[#19D9FF]/50 bg-[#0A1222] flex items-center justify-center shadow-[0_0_15px_rgba(25,217,255,0.3)] overflow-hidden p-0.5">
+          <div className="flex items-center gap-3 sm:gap-4 shrink-0">
+            <div className="h-11 px-2.5 rounded-xl bg-white/95 border border-white/40 flex items-center justify-center shadow-md">
+              <img src="/srm_logo.png" alt="SRMIST Ramapuram Logo" className="h-8 w-auto object-contain" />
+            </div>
+            <div className="w-[1px] h-8 bg-[#1B3045]" />
+            <div className="w-12 h-12 rounded-full border border-[#19D9FF]/50 bg-[#0A1222] flex items-center justify-center shadow-[0_0_15px_rgba(25,217,255,0.3)] overflow-hidden p-0.5 shrink-0">
               <img src="/logo.png" alt="GENOMENAUTS Logo" className="w-full h-full object-contain rounded-full" />
             </div>
             <div>

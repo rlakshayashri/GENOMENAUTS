@@ -38,8 +38,12 @@ export const Navbar: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex items-center justify-between gap-4">
         {/* LEFT: LOGO + TITLES (SINGLE LINE SUBTITLE) */}
-        <a href="#about" onClick={(e) => handleNavClick(e, '#about')} className="flex items-center gap-3 group shrink-0">
-          <div className="w-10 h-10 rounded-full border border-[#19D9FF]/70 bg-[#0A1222] flex items-center justify-center shadow-[0_0_15px_rgba(25,217,255,0.3)] group-hover:border-[#19D9FF] group-hover:shadow-[0_0_20px_rgba(25,217,255,0.5)] transition-all overflow-hidden p-0.5">
+        <a href="#about" onClick={(e) => handleNavClick(e, '#about')} className="flex items-center gap-2.5 sm:gap-3 group shrink-0">
+          <div className="h-10 px-2.5 rounded-xl bg-white/95 border border-white/40 flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.15)] group-hover:scale-105 transition-transform duration-300">
+            <img src="/srm_logo.png" alt="SRMIST Ramapuram Logo" className="h-7 w-auto object-contain" />
+          </div>
+          <div className="w-[1px] h-7 bg-[#1B3045] hidden sm:block" />
+          <div className="w-10 h-10 rounded-full border border-[#19D9FF]/70 bg-[#0A1222] flex items-center justify-center shadow-[0_0_15px_rgba(25,217,255,0.3)] group-hover:border-[#19D9FF] group-hover:shadow-[0_0_20px_rgba(25,217,255,0.5)] transition-all overflow-hidden p-0.5 shrink-0">
             <img src="/logo.png" alt="GENOMENAUTS Logo" className="w-full h-full object-contain rounded-full group-hover:scale-105 transition-transform duration-300" />
           </div>
           <div className="flex flex-col">
