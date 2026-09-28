@@ -60,7 +60,7 @@ export const HeroSection: React.FC = () => {
         >
           <Sparkles className="w-3.5 h-3.5 text-[#19D9FF] animate-spin" style={{ animationDuration: '8s' }} />
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#19D9FF] font-semibold">
-            01 / GENOMENAUTS · STUDENT BIOTECHNOLOGY CLUB
+            01 / GENORBIT · STUDENT BIOTECHNOLOGY CLUB
           </span>
           <span className="w-1.5 h-1.5 rounded-full bg-[#8FEA22] animate-ping" />
         </motion.div>
@@ -158,7 +158,7 @@ export const HeroSection: React.FC = () => {
                       <span>STUDENT-DRIVEN BIOTECHNOLOGY CLUB</span>
                     </div>
                     <p className="text-[#8C9BB0] text-xs sm:text-sm leading-relaxed">
-                      Genomenauts is a student-driven biotechnology club at SRMIST Ramapuram providing a platform to explore biotechnology beyond the classroom through interactive events, competitions, workshops, and outreach activities.
+                      GENORBIT is a student-driven biotechnology club at SRMIST Ramapuram providing a platform to explore biotechnology beyond the classroom through interactive events, competitions, workshops, and outreach activities.
                     </p>
                     <p className="text-[#F5F7FA] font-mono text-[11px] pt-1 text-cyan-green-gradient font-bold">
                       GOAL: Learn, explore, collaborate, and innovate beyond the curriculum.

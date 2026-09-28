@@ -46,7 +46,7 @@ export const DomainPodsSection: React.FC<{ onSelectMember?: (member: TeamMember)
               Find your <span className="text-cyan-green-gradient glow-text-cyan">frequency.</span>
             </h2>
             <p className="text-[#8C9BB0] text-base sm:text-lg leading-relaxed">
-              Every domain has its own rhythm. Explore the people shaping what Genomenauts becomes next across Bioresearch, Design, Content, PR, Motion Media, and Management.
+              Every domain has its own rhythm. Explore the people shaping what Genorbit becomes next across Bioresearch, Design, Content, PR, Motion Media, and Management.
             </p>
           </div>
 
@@ -154,7 +154,7 @@ export const DomainPodsSection: React.FC<{ onSelectMember?: (member: TeamMember)
                   <div className="pt-4 border-t border-[#1B3045]/60 flex items-center justify-between text-[10px] font-mono uppercase tracking-[0.15em] text-[#8C9BB0]">
                     <div className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: domainStyle.accent }} />
-                      <span>IN THE GENOMENAUTS ORBIT</span>
+                      <span>IN THE GENORBIT ORBIT</span>
                     </div>
                     <ArrowUpRight className="w-4 h-4 text-[#8C9BB0] group-hover:text-[#19D9FF] transition-colors" />
                   </div>

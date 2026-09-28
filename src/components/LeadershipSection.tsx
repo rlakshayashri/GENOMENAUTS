@@ -83,7 +83,7 @@ export const LeadershipSection: React.FC<LeadershipSectionProps> = ({ onSelectMe
               <div className="pt-4 border-t border-[#1B3045]/60 flex items-center justify-between text-[10px] font-mono uppercase tracking-[0.15em] text-[#8C9BB0]">
                 <div className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#8FEA22]" />
-                  <span>IN THE GENOMENAUTS ORBIT</span>
+                  <span>IN THE GENORBIT ORBIT</span>
                 </div>
                 <span className="text-[#19D9FF] group-hover:underline font-bold">PROFILE ↗</span>
               </div>
@@ -150,7 +150,7 @@ export const LeadershipSection: React.FC<LeadershipSectionProps> = ({ onSelectMe
                           {member.name}
                         </h4>
                         <span className="font-mono text-[10px] uppercase tracking-wider text-[#8FEA22] block mt-0.5 font-semibold">
-                          {member.role} · GENOMENAUTS
+                          {member.role} · GENORBIT
                         </span>
                       </div>
                     </div>

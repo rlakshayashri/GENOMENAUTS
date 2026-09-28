@@ -23,11 +23,11 @@ export const Footer: React.FC = () => {
             </div>
             <div className="w-[1px] h-8 bg-[#1B3045]" />
             <div className="w-12 h-12 rounded-full border border-[#19D9FF]/50 bg-[#0A1222] flex items-center justify-center shadow-[0_0_15px_rgba(25,217,255,0.3)] overflow-hidden p-0.5 shrink-0">
-              <img src="/logo.png" alt="GENOMENAUTS Logo" className="w-full h-full object-contain rounded-full" />
+              <img src="/logo.png" alt="GENORBIT Logo" className="w-full h-full object-contain rounded-full" />
             </div>
             <div>
               <div className="font-headline font-bold text-xl tracking-wider text-[#F5F7FA]">
-                GENOMENAUTS
+                GENORBIT
               </div>
               <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#8C9BB0] whitespace-nowrap">
                 SRMIST RAMAPURAM / BIOTECHNOLOGY
@@ -71,7 +71,7 @@ export const Footer: React.FC = () => {
         {/* BOTTOM COPYRIGHT */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between font-mono text-xs text-[#8C9BB0] gap-4">
           <div>
-            © 2026 GENOMENAUTS · SRM Institute of Science and Technology, Ramapuram Campus
+            © 2026 GENORBIT · SRM Institute of Science and Technology, Ramapuram Campus
           </div>
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-[#8FEA22]" />

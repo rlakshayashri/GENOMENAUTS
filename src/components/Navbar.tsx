@@ -44,11 +44,11 @@ export const Navbar: React.FC = () => {
           </div>
           <div className="w-[1px] h-7 bg-[#1B3045] hidden sm:block" />
           <div className="w-10 h-10 rounded-full border border-[#19D9FF]/70 bg-[#0A1222] flex items-center justify-center shadow-[0_0_15px_rgba(25,217,255,0.3)] group-hover:border-[#19D9FF] group-hover:shadow-[0_0_20px_rgba(25,217,255,0.5)] transition-all overflow-hidden p-0.5 shrink-0">
-            <img src="/logo.png" alt="GENOMENAUTS Logo" className="w-full h-full object-contain rounded-full group-hover:scale-105 transition-transform duration-300" />
+            <img src="/logo.png" alt="GENORBIT Logo" className="w-full h-full object-contain rounded-full group-hover:scale-105 transition-transform duration-300" />
           </div>
           <div className="flex flex-col">
             <span className="font-headline font-bold text-lg tracking-wider text-[#F5F7FA] group-hover:text-[#19D9FF] transition-colors leading-none mb-1">
-              GENOMENAUTS
+              GENORBIT
             </span>
             <span className="font-mono text-[9px] uppercase tracking-[0.14em] text-[#8C9BB0] whitespace-nowrap">
               SRMIST RAMAPURAM / BIOTECHNOLOGY

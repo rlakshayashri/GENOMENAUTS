@@ -147,7 +147,7 @@ export const MemberModal: React.FC<MemberModalProps> = ({ member, onClose }) => 
         <div className="pt-4 border-t border-[#1B3045] flex items-center justify-between text-xs font-mono text-[#8C9BB0]">
           <div className="flex items-center gap-2">
             <Dna className="w-4 h-4 text-[#8FEA22]" />
-            <span>GENOMENAUTS CREW MEMBER</span>
+            <span>GENORBIT CREW MEMBER</span>
           </div>
           <button
             onClick={onClose}
