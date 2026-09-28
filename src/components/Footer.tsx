@@ -11,31 +11,35 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-[#020711] border-t border-[#1B3045] pt-16 pb-12 relative z-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* MAIN FOOTER ROW WITH PERFECT ALIGNMENT */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 pb-12 border-b border-[#1B3045]/60">
+    <footer className="bg-[#020711] border-t border-[#1B3045] pt-14 pb-10 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+        
+        {/* TOP ROW: BRANDING LOGOS & WHATSAPP COMMUNITY CTA */}
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-8 border-b border-[#1B3045]/60">
           
-          {/* LEFT: BRANDING */}
+          {/* BRANDING BADGES */}
           <div className="flex items-center gap-3 sm:gap-4 shrink-0">
-            <div className="h-11 px-2.5 rounded-xl bg-white/95 border border-white/40 flex items-center justify-center shadow-md">
-              <img src="/srm_logo.png" alt="SRMIST Ramapuram Logo" className="h-8 w-auto object-contain" />
+            <div className="h-10 px-2.5 rounded-xl bg-white/95 border border-white/40 flex items-center justify-center shadow-md">
+              <img src="/srm_logo.png" alt="SRMIST Ramapuram Logo" className="h-7 w-auto object-contain" />
             </div>
-            <div className="w-[1px] h-8 bg-[#1B3045]" />
-            <div className="w-12 h-12 rounded-full border border-[#19D9FF]/50 bg-[#0A1222] flex items-center justify-center shadow-[0_0_15px_rgba(25,217,255,0.3)] overflow-hidden p-0.5 shrink-0">
-              <img src="/logo.png" alt="GENORBIT Logo" className="w-full h-full object-contain rounded-full" />
+
+            <div className="w-[1px] h-7 bg-[#1B3045]" />
+
+            <div className="w-11 h-11 rounded-full border border-[#19D9FF]/50 bg-[#0A1222] flex items-center justify-center shadow-[0_0_15px_rgba(25,217,255,0.3)] overflow-hidden p-0.5 shrink-0">
+              <img src="/logo.png" alt="GENOMENAUTS Logo" className="w-full h-full object-contain rounded-full" />
             </div>
+
             <div>
               <div className="font-headline font-bold text-xl tracking-wider text-[#F5F7FA]">
                 GENORBIT
               </div>
-              <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#8C9BB0] whitespace-nowrap">
-                SRMIST RAMAPURAM / BIOTECHNOLOGY
+              <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#8C9BB0] whitespace-nowrap">
+                GENOMENAUTS · SRMIST RAMAPURAM BIOTECHNOLOGY
               </div>
             </div>
           </div>
 
-          {/* CENTER: WHATSAPP COMMUNITY CTA BUTTON (ALWAYS SINGLE LINE) */}
+          {/* WHATSAPP COMMUNITY CTA BUTTON */}
           <a
             href="https://chat.whatsapp.com/C95GLOFgT5H2p3M8u6VKJG"
             target="_blank"
@@ -46,9 +50,11 @@ export const Footer: React.FC = () => {
             <span>JOIN WHATSAPP COMMUNITY</span>
             <ArrowUpRight className="w-4 h-4 shrink-0" />
           </a>
+        </div>
 
-          {/* RIGHT: NAVIGATION LINKS (CLEAN SINGLE HORIZONTAL ROW) */}
-          <nav className="flex flex-wrap items-center justify-center lg:justify-end gap-5 sm:gap-6 font-mono text-xs uppercase tracking-[0.15em] text-[#8C9BB0] shrink-0">
+        {/* MIDDLE ROW: CLEAN NAVIGATION SITEMAP */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 pb-6 border-b border-[#1B3045]/40">
+          <nav className="flex flex-wrap items-center gap-4 sm:gap-6 font-mono text-xs uppercase tracking-[0.15em] text-[#8C9BB0]">
             <a href="#about" onClick={(e) => handleNavClick(e, '#about')} className="hover:text-[#19D9FF] transition-colors whitespace-nowrap">
               About Club
             </a>
@@ -66,18 +72,22 @@ export const Footer: React.FC = () => {
             </a>
           </nav>
 
+          <div className="font-mono text-xs text-[#8C9BB0] whitespace-nowrap">
+            CAMPUS: SRMIST RAMAPURAM, CHENNAI
+          </div>
         </div>
 
-        {/* BOTTOM COPYRIGHT */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between font-mono text-xs text-[#8C9BB0] gap-4">
+        {/* BOTTOM ROW: COPYRIGHT & SYSTEM STATUS */}
+        <div className="flex flex-col sm:flex-row items-center justify-between font-mono text-xs text-[#8C9BB0] gap-4">
           <div>
-            © 2026 GENORBIT · SRM Institute of Science and Technology, Ramapuram Campus
+            © 2026 GENORBIT · GENOMENAUTS BIOTECHNOLOGY CLUB · SRMIST RAMAPURAM
           </div>
           <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-[#8FEA22]" />
-            <span>SYS STATUS: NORMAL</span>
+            <span className="w-2 h-2 rounded-full bg-[#8FEA22] animate-pulse" />
+            <span className="text-[#F5F7FA] font-bold">SYS STATUS: ONLINE</span>
           </div>
         </div>
+
       </div>
     </footer>
   );
